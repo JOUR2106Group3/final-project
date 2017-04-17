@@ -13,13 +13,13 @@
     <div style="width: 1200px; height: 800" id="leaflet"></div>
 
     <script>
-        // initialize the map on the "map" div with a given center and zoom
+        // initialize the map on the leaflet map div with a given center and zoom
         var map = new L.Map('leaflet', {
             center: new L.LatLng(22.339, 114.179),
             zoom: 12
         });
 
-        // create a new tile layer
+        // create existing bike lane tile layer bythunderforest
         var tileUrl = 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=8acedab11683401eb09f0f3c0b75c264',
             layer = new L.TileLayer(tileUrl, {
                 attribution: 'Map © <a href="www.thunderforest.com">Thunderforest</a>, Data &copy; <a href="http://openstreetmap.org">OpenStreetMap contributors</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
@@ -37,7 +37,6 @@
         markerSan.addTo(map);
         markerSan.bindPopup("三門仔段<br>日期：18.08.2015").openPopup();
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfm6e6an81szHQvAYBTTVMKkdms-TB2Mk&callback=initMap" async defer></script>
 </body>
 
 </html>
