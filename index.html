@@ -29,18 +29,33 @@
         // add the layer to the map
         map.addLayer(layer);
 
+        //create icons
+        var consIcon = new L.icon({
+            iconUrl: 'construction.png',
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+            popupAnchor: [0, -30],
+            //shadowUrl: 'my-icon-shadow.png',
+            //shadowSize: [68, 95],
+            //shadowAnchor: [22, 94]
+        });
+
         //San Mun Jai geojson layer
         var geojsonSan = new L.GeoJSON.AJAX("SanMunJai.geojson");
         geojsonSan.addTo(map);
         //add marker and bind a popup
-        var markerSan = new L.marker([22.457449331564764, 114.2114531993866])
+        var markerSan = new L.marker([22.457449331564764, 114.2114531993866], {
+            icon: consIcon
+        })
         markerSan.addTo(map);
         markerSan.bindPopup("三門仔段<br>日期：18.08.2015").openPopup();
 
         var geojsonSheung = new L.GeoJSON.AJAX("TuenMun-SheungShui.geojson");
         geojsonSheung.addTo(map);
 
-        var markerShueng = new L.marker([22.503240063271182, 114.12375569343567])
+        var markerShueng = new L.marker([22.503240063271182, 114.12375569343567], {
+            icon: consIcon
+        })
         markerShueng.addTo(map);
         markerShueng.bindPopup("屯門至上水段（餘下工程）").openPopup();
     </script>
