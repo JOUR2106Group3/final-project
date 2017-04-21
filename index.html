@@ -39,6 +39,13 @@
             //shadowSize: [68, 95],
             //shadowAnchor: [22, 94]
         });
+        
+        var var name = new L.GeoJSON.AJAX("Tsuen Wan - Tuen Mun.geojson");
+        varname.addTo(map);
+        //add marker and bind a popup
+        var var name = new L.marker([ 114.11155700683594, 22.36023644579937])
+        var name.addTo(map);
+        var name.bindPopup("荃灣至屯門單車徑<br>日期：17.07.2014").openPopup();
 
         //San Mun Jai geojson layer
         var geojsonSan = new L.GeoJSON.AJAX("SanMunJai.geojson");
