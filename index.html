@@ -52,11 +52,11 @@
         var geojsonShan = new L.GeoJSON.AJAX("SheungShui-Maonshan.geojson");
         geojsonShan.addTo(map);
         //add marker and bind a popup
-        var markerMun = new L.marker([22.50843381173997, 114.1270065307617], {
+        var markerShan = new L.marker([22.50843381173997, 114.1270065307617], {
             icon: consIcon
         })
         markerShan.addTo(map);
-        markerShan.bindPopup("上水至馬鞍山段 <br>日期：17.07.2014").openPopup();
+        markerShan.bindPopup("上水至馬鞍山段<br>日期：17.07.2014").openPopup();
         
         //San Mun Jai geojson layer
         var geojsonSan = new L.GeoJSON.AJAX("SanMunJai.geojson");
