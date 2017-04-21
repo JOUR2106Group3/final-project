@@ -39,7 +39,14 @@
             //shadowSize: [68, 95],
             //shadowAnchor: [22, 94]
         });
-        
+
+        var completeIcon = new L.icon({
+            iconUrl: 'complete.png',
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+            popupAnchor: [0, -30],
+        });
+
         var geojsonMun = new L.GeoJSON.AJAX("TsuenWan-TuenMun.geojson");
         geojsonMun.addTo(map);
         //add marker and bind a popup
@@ -52,12 +59,12 @@
         var geojsonShan = new L.GeoJSON.AJAX("SheungShui-Maonshan.geojson");
         geojsonShan.addTo(map);
         //add marker and bind a popup
-        var markerShan = new L.marker([22.50843381173997, 114.1270065307617], {
-            icon: consIcon
+        var markerShan = new L.marker([22.42907904712161, 114.26158905029297], {
+            icon: completeIcon
         })
         markerShan.addTo(map);
-        markerShan.bindPopup("上水至馬鞍山段<br>日期：17.07.2014").openPopup();
-        
+        markerShan.bindPopup("上水至馬鞍山段<br>日期：17.07.2014<br>已完工並開放使用").openPopup();
+
         //San Mun Jai geojson layer
         var geojsonSan = new L.GeoJSON.AJAX("SanMunJai.geojson");
         geojsonSan.addTo(map);
