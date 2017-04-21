@@ -41,11 +41,11 @@
         });
         
         var geojsonMun = new L.GeoJSON.AJAX("TsuenWan-TuenMun.geojson");
-        varname.addTo(map);
+        geojsonMun.addTo(map);
         //add marker and bind a popup
-        var name = new L.marker([114.11155700683594, 22.36023644579937])
-        var name.addTo(map);
-        var name.bindPopup("荃灣至屯門單車徑<br>日期：17.07.2014").openPopup();
+        var markerMun = new L.marker([22.36023644579937, 114.11155700683594])
+        markerMun.addTo(map);
+        markerMun.bindPopup("荃灣至屯門單車徑<br>日期：17.07.2014").openPopup();
 
         //San Mun Jai geojson layer
         var geojsonSan = new L.GeoJSON.AJAX("SanMunJai.geojson");
