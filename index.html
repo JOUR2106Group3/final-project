@@ -40,12 +40,19 @@
             //shadowAnchor: [22, 94]
         });
 
+        //icon of complete project
         var completeIcon = new L.icon({
             iconUrl: 'complete.png',
             iconSize: [30, 30],
             iconAnchor: [15, 30],
             popupAnchor: [0, -30],
         });
+
+        //create style
+        var completeStyle = {
+            "color": "#01aa6c",
+
+        };
 
         var geojsonMun = new L.GeoJSON.AJAX("TsuenWan-TuenMun.geojson");
         geojsonMun.addTo(map);
