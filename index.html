@@ -39,7 +39,8 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default topnav" role="navigation">
+        <!--navbar-fixed-top -->
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -529,6 +530,27 @@
                     })
                     markerShueng.addTo(map);
                     markerShueng.bindPopup("TuenMun-SheungShui<br>-Remaining Works<br>( Ref.: 7259RS/B )").openPopup();
+
+                    var legend = L.control({
+                        position: 'bottomright'
+                    });
+
+                    legend.onAdd = function(map) {
+
+                        var div = L.DomUtil.create('div', 'info legend'),
+                            grades = ["Projects under construction", "Projects already completed"],
+                            labels = ["construction.png", "complete.png"];
+
+                        // loop through our density intervals and generate a label with a colored square for each interval
+                        for (var i = 0; i < grades.length; i++) {
+                            div.innerHTML +=
+                                grades[i] + (" <img src=" + labels[i] + " height='50' width='50'>") + '<br>';
+                        }
+
+                        return div;
+                    };
+
+                    legend.addTo(map);
                 </script>
 
                 <!-- jQuery -->
