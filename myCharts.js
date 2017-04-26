@@ -167,7 +167,7 @@ $(function() {
         },
         series: [{
             type: 'bar',
-            name: 'For Businesss, Commuting or School Trips',
+            name: 'For Business, Commuting or School Trips',
             data: [12.4],
             stack: 'income',
             barWidth: 30,
