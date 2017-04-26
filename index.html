@@ -34,6 +34,15 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script src="leaflet.ajax.min.js"></script>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 </head>
 
 <body>
@@ -105,10 +114,11 @@
                     <div class="intro-message">
                         <h1> Can HK become a bike friendly city?</h1>
                         <h3> Reported by Jessie Pang, Roy Tang and Shanny Cai</h3>
+                        <div class="fb-like" data-href="https://jour2106group3.github.io/final-project/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                         <br>
                         <p class="lead"> Across the globe, cities like New York, London and Singapore have developed bike-friendly policies and introduced bike-sharing systems to encourage the usage of cycling as an alternative eco-friendly mode of transportation. </p>
                         <br>
-                       <p class="lead"> Hong Kong, with one of the most developed transport network in the world, fall far behind from those cities. Cycling has been perceived as a weekend entertainment more than a transportation mode owing to the unfriendly road design
+                        <p class="lead"> Hong Kong, with one of the most developed transport network in the world, fall far behind from those cities. Cycling has been perceived as a weekend entertainment more than a transportation mode owing to the unfriendly road design
                             and government policies. </p>
                         <br>
                         <p class="lead"> Not long ago, the newly launched Gobee.bike sharing app has a bumpy start with damaged rides and security fears. Meanwhile, attempts of extending bike lanes across New Territories are also halted due to the high construction cost.
@@ -297,10 +307,23 @@
                 <h5>Law enforcement</h5>
                 <div id="main4" style="width: 800px;height:400px;"></div>
             </div>
-
+           </div>
         </div>
-        <!-- /.content-section-a -->
 
+        <a name="suggestions"></a>
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                         <div class="fb-comments" data-href="https://jour2106group3.github.io/final-project/" data-numposts="5"></div>
+                    </div>
+               </div>
+        </div>
+        
         <a name="contact"></a>
         <div class="banner">
 
