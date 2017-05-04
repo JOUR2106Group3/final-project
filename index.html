@@ -42,19 +42,6 @@
     <script src="js/echarts.min.js"></script>
 
     <style>
-        .main {
-            display: flex;
-            flex-direction: column;
-            -webkit-flex-direction: column;
-            justify-content: center;
-            margin: auto;
-            width: 75%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color:white;
-            text-align: justify;
-            word-wrap: break-word;
-        }
-
         body {
             background: url("img/night.jpg") no-repeat;
             background-size: cover;
@@ -77,11 +64,8 @@
 
         br {
             display: block;
-            /* makes it have a width */
             content: "";
-            /* clears default height */
             margin-top: 0;
-            /* change this to whatever height you want it */
         }
     </style>
 </head>
@@ -171,7 +155,7 @@
                     </div>
                     <!-- /.container -->
                 </div>
-                <!-- Page Content -->
+
                 <a name="currentrole"></a>
                 <div class="content-section-a">
                     <div class="row">
@@ -190,45 +174,45 @@
                                 with other public transportation while the rest were “cycling-only”.
                             </p>
 
-                            <!--script-->
-                            <div class="thumbnail" style="padding:40px">
-                                <div>
+                            <div class="panel panel-primary">
+                                <div class="panel-body" style="overflow-x:auto">
                                     <div id="main2" style="width:100%;height:170px;overflow-x:auto;overflow-y:hidden"></div>
+                                    <div id="main3" style="width:100%;height:170px;overflow-x:auto;overflow-y:hidden"></div>
                                 </div>
-                                <div id="main3" style="width:100%;height:170px;overflow-x:auto;overflow-y:hidden"></div>
-                            </div>
 
-                            <br>
-                            <p class="lead text-justify">
-                                Meanwhile, most “cycling trips” are found in new towns like Fanling, Sheung Shui, Yuen Long, Tai Po, Sha Tin and Tuen
-                                Mun where most biking facilities and tracks were found.
-                            </p>
 
-                            <div style="float:right; padding-right:40px;padding-left:40px">
-                                <img src="img/DrBarber.JPG" alt="Dr. Barber" class="img-responsive" style="width:480px" />
-                                <div class="caption"><i><p> Dr. Barber believes convenient transportation lowers the incentive to bike. </p></i></div>
-                            </div>
-                            <br>
-                            <p class="lead text-justify">
-                                Apart from the city’s extreme density, hilly topography and unpleasant weather, highly connected public transportation
-                                also contribute to such perception.
-                            </p>
-                            <p class="lead text-justify">
-                                “Hong Kong has a really really excellent public transportation system and ninety percent of people don't own private
-                                cars to get around so if other modes are so convenient then why change anything. That hinders the possibility of
-                                promoting cycling in a rigorous way,” said Dr. Lachlan Barber, an assistant professor of Geography at Hong Kong Baptist
-                                University.
-                            </p>
-                            <div class=".col-xs-12 .col-sm-6 .col-md-8">
+                                <br>
                                 <p class="lead text-justify">
-                                    Such view on the use of bicycle comes down to policy and thus hindered any further bike-friendly infrastructure projects
-                                    in many new towns where bicycle use is still prominent.
+                                    Meanwhile, most “cycling trips” are found in new towns like Fanling, Sheung Shui, Yuen Long, Tai Po, Sha Tin and Tuen
+                                    Mun where most biking facilities and tracks were found.
                                 </p>
+
+                                <div style="float:right; padding-right:40px;padding-left:40px">
+                                    <img src="img/DrBarber.JPG" alt="Dr. Barber" class="img-responsive" style="width:480px" />
+                                    <div class="caption"><i><p> Dr. Barber believes convenient transportation lowers the incentive to bike. </p></i></div>
+                                </div>
+                                <br>
+                                <p class="lead text-justify">
+                                    Apart from the city’s extreme density, hilly topography and unpleasant weather, highly connected public transportation
+                                    also contribute to such perception.
+                                </p>
+                                <p class="lead text-justify">
+                                    “Hong Kong has a really really excellent public transportation system and ninety percent of people don't own private
+                                    cars to get around so if other modes are so convenient then why change anything. That hinders the possibility of
+                                    promoting cycling in a rigorous way,” said Dr. Lachlan Barber, an assistant professor of Geography at Hong Kong Baptist
+                                    University.
+                                </p>
+                                <div class=".col-xs-12 .col-sm-6 .col-md-8">
+                                    <p class="lead text-justify">
+                                        Such view on the use of bicycle comes down to policy and thus hindered any further bike-friendly infrastructure projects
+                                        in many new towns where bicycle use is still prominent.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /.container -->
+                
                 <a name="policies"></a>
                 <div class="content-section-b">
 
@@ -278,9 +262,8 @@
                 <div class="content-section-a">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div style="padding-left:40px;padding-right:40px">
-                            <div class="clearfix"></div>
                             <h2 class="section-heading"> Infrastructure woes <br></h2>
+                            <div class="clearfix"></div>
                             <p class="lead text-justify">
                                 Hong Kong road planning and standards were adopted from overseas through colonial governance between 1950s-1970s,
                                 according to Dr. Barber.
@@ -303,25 +286,29 @@
                                 New Towns.
                             </p>
 
+
+                            <!--THIS PADDING IS ONLY FOR THIS SPECIFIC SECTION. DON'T MOVE IT!-->
+                            <div style="padding:40px">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading" style="text-align:center"> Cycle Track Network - Extension  </div>
                                     <div class="panel-body" style="overflow-x:auto">
 
-                                <div class="col-xs-3">
-                                    <img class="img-responsive" src="blue.png" style="float:left" />
-                                </div>
-                                <div class="col-xs-3">
-                                    <p> represents designated bike lanes </p>
-                                </div>
+                                        <div class="col-xs-3">
+                                            <img class="img-responsive" src="blue.png" style="float:left" />
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <p> represents designated bike lanes </p>
+                                        </div>
 
-                                <div style="width: 100%; height: 600px;" id="leaflet"></div>
-                                <br>
+                                        <div style="width: 100%; height: 600px;" id="leaflet"></div>
+                                        <br>
 
-                                <div class="thumbnail">
-                                    <iframe src="https://jour2106group3.github.io/timeline/" frameborder="0" style="width:100%;height:300px"></iframe>
-                                    <a href="https://jour2106group3.github.io/timeline/" target="_blank">Click to view the timeline in a new tab</a>
+                                        <div class="thumbnail">
+                                            <iframe src="https://jour2106group3.github.io/timeline/" frameborder="0" style="width:100%;height:300px"></iframe>
+                                            <a href="https://jour2106group3.github.io/timeline/" target="_blank">Click to view the timeline in a new tab</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
 
                             <p class="lead text-justify">
@@ -340,10 +327,8 @@
                                 <img src="img/Ben.png" alt="Ben Macleod" class="img-responsive" style="width:450px" />
                                 <div class="caption">
                                     <i>
-                                        <p>
-                                            “Drivers, as a result, will tend to drive faster and faster and further <br> threaten the road safety for cyclists”, said
-                                            MacLeod.
-                                        </p>
+                                        “Drivers, as a result, will tend to drive faster and faster and further <br> threaten the road safety for cyclists”, said
+                                        MacLeod.
                                     </i>
                                 </div>
                             </div>
@@ -355,97 +340,98 @@
                         </div>
                     </div>
                 </div>
+
                 <a name="bikesharing"></a>
                 <div class="content-section-b">
-
                     <div class="row">
                         <div class="col-sm-12">
-
                             <div class="clearfix"></div>
                             <h2 class="section-heading"> Feasibility of bike sharing scheme in Hong Kong <br></h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="padding-left:40px;padding-right:40px">
 
+                            <!--THIS PADDING IS FOR THIS SECTION ONLY! DON'T MOVE IT!-->
+                            <div style="padding:40px">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading" style="text-align:center"> Newly launched Hong Kong bike sharing app has bumpy start with damaged rides and security fears </div>
                                     <div class="panel-body" style="overflow-x:auto">
-                                    <ul class="timeline timeline-horizontal">
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge primary"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">Bike-Sharing Arrives In Hong Kong</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 19th.April</small></p>
+                                        <ul class="timeline timeline-horizontal">
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge primary"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">Bike-Sharing Arrives In Hong Kong</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 19th.April</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>"The first wave of 1,000 bright green bikes will serve urbanite in New Territories" <span><a target="_blank" href="https://www.greenqueen.com.hk/bike-sharing-arrives-hong-kong-thanks-new-startup-gobee-bike/">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="timeline-body">
-                                                    <p>"The first wave of 1,000 bright green bikes will serve urbanite in New Territories" <span><a target="_blank" href="https://www.greenqueen.com.hk/bike-sharing-arrives-hong-kong-thanks-new-startup-gobee-bike/">via</a></span></p>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge success"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">User privacy in risk of revealing</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 22nd.April reported by HK01</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>Credit cards data not encrypted, affected data were deleted before leaking <span><a target="_blank" href="https://www.hk01.com/%E6%B8%AF%E8%81%9E/86069/Gobee-bike%E8%AD%89%E5%AF%A6app%E6%9C%89%E4%BF%9D%E5%AE%89%E5%95%8F%E9%A1%8C-%E7%A8%8B%E5%BC%8F%E5%93%A1-%E8%B3%87%E6%96%99%E6%88%96%E5%A4%96%E6%B3%84-Cut%E5%8D%A1%E4%BF%9D%E5%B9%B3%E5%AE%89">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge success"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">User privacy in risk of revealing</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 22nd.April reported by HK01</small></p>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge info"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">Vandalism against sharing bikes</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>23rd.April reported by Sing Pao Daily News</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>Four bikes were artificially damaged, three thrown into water <span><a target="_blank" href="https://www.singpao.com.hk/index.php?fi=history&id=29255">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="timeline-body">
-                                                    <p>Credit cards data not encrypted, affected data were deleted before leaking <span><a target="_blank" href="https://www.hk01.com/%E6%B8%AF%E8%81%9E/86069/Gobee-bike%E8%AD%89%E5%AF%A6app%E6%9C%89%E4%BF%9D%E5%AE%89%E5%95%8F%E9%A1%8C-%E7%A8%8B%E5%BC%8F%E5%93%A1-%E8%B3%87%E6%96%99%E6%88%96%E5%A4%96%E6%B3%84-Cut%E5%8D%A1%E4%BF%9D%E5%B9%B3%E5%AE%89">via</a></span></p>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge danger"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">The CEO of Gobee Bike expressed disappointment of Hong Kong civic virtue</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>24th.April reported by Sky Post</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>"It's horrible", said Raphael Cohen, founder of gobee.bike <span><a target="_blank" href="http://skypost.ulifestyle.com.hk/article/1792896/sras006/%E7%94%9F%E6%B4%BB%E5%89%AF%E5%88%8A">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge info"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">Vandalism against sharing bikes</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>23rd.April reported by Sing Pao Daily News</small></p>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge warning"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">Legislators urged the government to upgrade the city's cycling infrastracture</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 24th.April reported by Wen Wei Po</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>The government should reivew cycling policies, said District Councilor Mr. LI Sai-wing <span><a target="_blank" href="http://paper.wenweipo.com/2017/04/24/PL1704240005.htm">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                                <div class="timeline-body">
-                                                    <p>Four bikes were artificially damaged, three thrown into water <span><a target="_blank" href="https://www.singpao.com.hk/index.php?fi=history&id=29255">via</a></span></p>
+                                            </li>
+                                            <li class="timeline-item">
+                                                <div class="timeline-badge"><i class="glyphicon glyphicon-list-alt"></i></div>
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">The Media criticised Gobee Bike was not well-prepared</h4>
+                                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>26th.April commented by Apple Daily</small></p>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>Experienced founder made rookie mistakes <span><a target="_blank" href="http://hk.apple.nextmedia.com/financeestate/art/20170426/20001411">via</a></span></p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge danger"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">The CEO of Gobee Bike expressed disappointment of Hong Kong civic virtue</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>24th.April reported by Sky Post</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>"It 's horrible", said Raphael Cohen, founder of gobee.bike <span><a target="_blank" href="http://skypost.ulifestyle.com.hk/article/1792896/sras006/%E7%94%9F%E6%B4%BB%E5%89%AF%E5%88%8A">via</a></span></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">Legislators urged the government to upgrade the city's cycling infrastracture</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 24th.April reported by Wen Wei Po</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>The government should reivew cycling policies, said District Councilor Mr. LI Sai-wing <span><a target="_blank" href="http://paper.wenweipo.com/2017/04/24/PL1704240005.htm">via</a></span></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge"><i class="glyphicon glyphicon-list-alt"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h4 class="timeline-title">The Media criticised Gobee Bike was not well-prepared</h4>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>26th.April commented by Apple Daily</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Experienced founder made rookie mistakes <span><a target="_blank" href="http://hk.apple.nextmedia.com/financeestate/art/20170426/20001411">via</a></span></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
@@ -507,6 +493,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a name="examples"></a>
                 <div class="content-section-a">
                     <div class="row">
@@ -545,6 +532,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a name="benefits"></a>
                 <div class="content-section-b">
                     <div class="row">
@@ -587,6 +575,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a name="suggestions"></a>
                 <div class="content-section-a">
 
@@ -604,20 +593,20 @@
                             </p><br>
                             <h4>Law enforcement</h4>
                             <br>
-                             <div class="thumbnail" style="padding:40px">
+                            <div class="thumbnail" style="padding:40px">
                                 <div id="main4" style="width:inherit;height:400px;overflow-x:auto;overflow-y:hidden"></div>
                             </div>
                             <br>
                             <p class="lead text-justify">
                                 Edward Yiu, Bike the Moment and Rideout had been launching <span>
-                                    <a href="http://bikethemoment.com/tinkwongride/"target="_blank">“Tin Kwong Ride”</a>
+                                    <a href="http://bikethemoment.com/tinkwongride/" target="_blank">“Tin Kwong Ride”</a>
                                 </span>(meaning dawn ride in Cantonese) for consecutively 22 weeks. It was
                                 a mass ride along the north of Hong Kong Island with an aim to tell the government the importance of introducing
                                 cycling-friendly policies.
                             </p>
                             <br>
-                            <div class="thumbnail"style="padding-right: 40px;padding-left: 40px;overflow-x:auto;overflow-y:hidden">
-                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/cOLz47dwt2E" frameborder="0" allowfullscreen></iframe>
+                            <div class="thumbnail" style="padding-right: 40px;padding-left: 40px;overflow-x:auto;overflow-y:hidden">
+                                <iframe src="https://www.youtube.com/embed/cOLz47dwt2E" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <figcaption style="padding-left:40px;padding-right:40px"> Lawmaker Edward Yiu and other activists have been actively promoting the idea of Tin Kwong Ride in HK.</figcaption><br>
                             <br>
@@ -679,6 +668,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a name="contact"></a>
                 <div class="content-section-b">
 
@@ -697,7 +687,7 @@
                                 <h2>Contact Us:</h2>
                             </div>
                             <div class="col-lg-6" style="padding-left:40px;padding-right:40px">
-                                <ul class="list-inline banner-social-buttons" >
+                                <ul class="list-inline banner-social-buttons">
                                     <li>
                                         <a href="mailto:14216639@life.hkbu.edu,hk" class="btn btn-default btn-lg">
                                             <i class="fa fa-envelope fa-fw"></i>
